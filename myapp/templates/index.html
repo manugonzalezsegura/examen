@@ -33,9 +33,9 @@
       </label>
       <div class="dropdown_menu">
         <ul>
-          <li><a class="nav-link" href="{% url "login" %}">Login</a></li>
+          
           {% if user.is_authenticated %}
-          <li><a class="nav-link" href="{% url "medicamento" %}">comprar droga</a></li>
+          <li><a class="nav-link" href="{% url "medicamento" %}">comprar Medicamentos</a></li>
           <li><a class="nav-link" href="{% url "salir" %}">Salir</a></li>
           <li> <a class="nav-link" href="{% url "addPaciente" %}">Perfil</a></li>
           {% else %}
